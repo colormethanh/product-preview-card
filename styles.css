@@ -1,2 +1,91 @@
-.attribution { font-size: 11px; text-align: center; }
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+
+
+body 
+{
+    background-color: hsl(30, 38%, 92%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  grid-template-columns: [left-start] 5% [center-start] 90% [right-start] 5% [end];
+}
+
+.card {
+  display: grid;
+  grid-column-start: center-start;
+  background-color: darkgray;
+  height: 90%;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card-info {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+#category {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+#name {
+  font-family:'Fraunces', serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#description {
+  font-family:'Montserrat', sans-serif;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+.attribution 
+{
+    position: absolute;
+    top: 99%;
+    transform: translate(0, -99%);
+    font-size: 12px; 
+    text-align: center; 
+    width: 100%;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width:700px) {
+
+  .card {
+    grid-template-rows: [picture-start] 40% [info-start] auto [end];
+  }
+}
+
+@media screen and (min-width:701px) {
+  .wrapper {
+    grid-template-columns: [left-start] 1fr [center-start] 35% [right-start] 1fr;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: [picture-start] 45% [info-start] auto [end];
+    height: 55%;
+  }
+}
+
+
+
+
