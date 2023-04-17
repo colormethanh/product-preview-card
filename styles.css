@@ -146,7 +146,7 @@ body
 
 @media screen and (min-width:701px) {
   .wrapper {
-    grid-template-columns: [left-start] 1fr [center-start] 35% [right-start] 1fr;
+    grid-template-columns: [left-start] 1fr [center-start] 40% [right-start] 1fr;
   }
 
   .card {
