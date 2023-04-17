@@ -151,7 +151,7 @@ body
 
   .card {
     display: grid;
-    grid-template-columns: [picture-start] 45% [info-start] auto [end];
+    grid-template-columns: [picture-start] 50% [info-start] auto [end];
     height: 55%;
   }
 
